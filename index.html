@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎓 Student Grade Calculator</h1>
+
+        <input type="text"
+               id="name"
+               placeholder="Enter Student Name">
+
+        <input type="number"
+               id="totalMarks"
+               placeholder="Maximum Marks Per Subject">
+
+        <h3>Enter Subject Marks</h3>
+
+        <div id="subjects">
+
+            <input type="number"
+                   class="subject"
+                   placeholder="Subject 1 Marks">
+
+            <input type="number"
+                   class="subject"
+                   placeholder="Subject 2 Marks">
+
+            <input type="number"
+                   class="subject"
+                   placeholder="Subject 3 Marks">
+
+            <input type="number"
+                   class="subject"
+                   placeholder="Subject 4 Marks">
+
+            <input type="number"
+                   class="subject"
+                   placeholder="Subject 5 Marks">
+
+        </div>
+
+        <div class="btn-group">
+
+            <button onclick="addSubject()">
+                ➕ Add Subject
+            </button>
+
+            <button onclick="removeSubject()">
+                ➖ Remove Subject
+            </button>
+
+        </div>
+
+        <button class="calculate-btn"
+                onclick="calculateGrade()">
+            Calculate Result
+        </button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
